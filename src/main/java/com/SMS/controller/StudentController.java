@@ -18,4 +18,12 @@ public class StudentController {
         System.out.println("Student added");
         return new ResponseEntity<>("Student added", HttpStatus.CREATED);
     }
+
+    @PostMapping("/deleteStudent/{id}")
+    public ResponseEntity<String> deleteStudent(@PathVariable int id){
+        studentService.deleteStudent(id);
+        System.out.println("Student deleted");
+        return new ResponseEntity<>("Student deleted", HttpStatus.CREATED);
+    }
+
 }
