@@ -1,6 +1,6 @@
 package com.SMS.controller;
 
-import com.SMS.implementation.StudentServiceImplementation;
+import com.SMS.service.implementation.StudentServiceImplementation;
 import com.SMS.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

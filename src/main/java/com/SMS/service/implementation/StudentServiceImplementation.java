@@ -1,4 +1,4 @@
-package com.SMS.implementation;
+package com.SMS.service.implementation;
 
 import com.SMS.Repository.StudentRepository;
 import com.SMS.model.Student;
