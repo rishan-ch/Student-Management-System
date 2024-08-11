@@ -21,7 +21,7 @@ public class StudentController {
         return new ResponseEntity<>("Student added", HttpStatus.CREATED);
     }
 
-    @PostMapping("/deleteStudent/{id}")
+    @DeleteMapping("/deleteStudent/{id}")
     public ResponseEntity<String> deleteStudent(@PathVariable int id){
         studentService.deleteStudent(id);
         System.out.println("Student deleted");
@@ -33,7 +33,7 @@ public class StudentController {
         return studentService.getStudentById(id);
     }
 
-    @PostMapping("/updateStudent")
+    @PutMapping("/updateStudent")
     public ResponseEntity<String> updateStudent(@RequestBody Student student){
         studentService.updateStudent(student);
         System.out.println("Student updated");
